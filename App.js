@@ -7,7 +7,7 @@ const Logo = () => {
       <img
         className="logo"
         alt="logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDO4Rq_8xvu8QGBchN8F-IwPz9E4oZEZ0ODQ&usqp=CAU"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eyW6P2H3qhGqnPcHFTDjbHckb4MOLBrRiw&usqp=CAU"
       />
     </a>
   );
@@ -395,7 +395,7 @@ const Card = ({ name, cloudinaryImageId, avgRatingString, cuisines }) => {
       />
       <div className="card-Content">
         <h2>{name}</h2>
-        <h3>{avgRatingString} &#9733;</h3>
+        <h3>&#9733; {avgRatingString} </h3>
         <h4>{cuisines.join(", ")}</h4>
       </div>
     </div>
@@ -404,15 +404,18 @@ const Card = ({ name, cloudinaryImageId, avgRatingString, cuisines }) => {
 const Body = () => {
   return (
     <div className="card-container">
-      <Card {...restaurantList[0].info} />
-      <Card {...restaurantList[1].info} />
-      <Card {...restaurantList[2].info} />
-      <Card {...restaurantList[3].info} />
+      {restaurantList.map((restaurant) => {
+        return <Card {...restaurant.info} key={restaurant.info.id} />;
+      })}
     </div>
   );
 };
 const Footer = () => {
-  return <h1>Footer</h1>;
+  return (
+    <footer>
+      <h4>&copy; Made with love by shubham</h4>
+    </footer>
+  );
 };
 
 const AppLayot = () => {
