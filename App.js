@@ -390,14 +390,14 @@ const Card = (props) => {
       <img
         src={
           "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          restaurantList[1].info?.cloudinaryImageId
+          props.resto.info?.cloudinaryImageId
         }
         alt="image"
       />
       <div className="card-Content">
-        <h2>{restaurantList[1].info?.name}</h2>
-        <h3>{restaurantList[1].info?.avgRatingString} &#9733;</h3>
-        <h4>{restaurantList[1].info?.cuisines.join(", ")}</h4>
+        <h2>{props.resto.info?.name}</h2>
+        <h3>{props.resto.info?.avgRatingString} &#9733;</h3>
+        <h4>{props.resto.info?.cuisines.join(", ")}</h4>
       </div>
     </div>
   );

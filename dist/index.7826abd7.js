@@ -3445,7 +3445,7 @@ const Card = (props)=>{
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + restaurantList[1].info?.cloudinaryImageId,
+                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + props.resto.info?.cloudinaryImageId,
                 alt: "image"
             }, void 0, false, {
                 fileName: "App.js",
@@ -3456,7 +3456,7 @@ const Card = (props)=>{
                 className: "card-Content",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: restaurantList[1].info?.name
+                        children: props.resto.info?.name
                     }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 398,
@@ -3464,7 +3464,7 @@ const Card = (props)=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         children: [
-                            restaurantList[1].info?.avgRatingString,
+                            props.resto.info?.avgRatingString,
                             " ★"
                         ]
                     }, void 0, true, {
@@ -3473,7 +3473,7 @@ const Card = (props)=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: restaurantList[1].info?.cuisines.join(", ")
+                        children: props.resto.info?.cuisines.join(", ")
                     }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 400,
