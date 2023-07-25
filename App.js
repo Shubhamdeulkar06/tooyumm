@@ -382,8 +382,8 @@ const restaurantList = [
     },
   },
 ];
-const Card = ({ resto }) => {
-  const { name, cloudinaryImageId, avgRatingString, cuisines } = resto.info;
+const Card = ({ name, cloudinaryImageId, avgRatingString, cuisines }) => {
+  // const { name, cloudinaryImageId, avgRatingString, cuisines } = resto.info;
   return (
     <div className="card">
       <img
@@ -404,10 +404,10 @@ const Card = ({ resto }) => {
 const Body = () => {
   return (
     <div className="card-container">
-      <Card resto={restaurantList[0]} />
-      <Card resto={restaurantList[1]} />
-      <Card resto={restaurantList[2]} />
-      <Card resto={restaurantList[3]} />
+      <Card {...restaurantList[0].info} />
+      <Card {...restaurantList[1].info} />
+      <Card {...restaurantList[2].info} />
+      <Card {...restaurantList[3].info} />
     </div>
   );
 };

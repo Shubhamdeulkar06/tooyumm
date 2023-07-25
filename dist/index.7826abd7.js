@@ -3439,8 +3439,8 @@ const restaurantList = [
         }
     }
 ];
-const Card = ({ resto })=>{
-    const { name, cloudinaryImageId, avgRatingString, cuisines } = resto.info;
+const Card = ({ name, cloudinaryImageId, avgRatingString, cuisines })=>{
+    // const { name, cloudinaryImageId, avgRatingString, cuisines } = resto.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
@@ -3498,28 +3498,28 @@ const Body = ()=>{
         className: "card-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                resto: restaurantList[0]
+                ...restaurantList[0].info
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 407,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                resto: restaurantList[1]
+                ...restaurantList[1].info
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 408,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                resto: restaurantList[2]
+                ...restaurantList[2].info
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 409,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
-                resto: restaurantList[3]
+                ...restaurantList[3].info
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 410,
