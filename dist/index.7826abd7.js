@@ -3439,56 +3439,55 @@ const restaurantList = [
         }
     }
 ];
-const Card = (props)=>{
-    console.log(props);
+const Card = ({ resto })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + props.resto.info?.cloudinaryImageId,
+                src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resto.info?.cloudinaryImageId,
                 alt: "image"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 390,
+                lineNumber: 388,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "card-Content",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: props.resto.info?.name
+                        children: resto.info?.name
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 398,
+                        lineNumber: 396,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         children: [
-                            props.resto.info?.avgRatingString,
+                            resto.info?.avgRatingString,
                             " ★"
                         ]
                     }, void 0, true, {
                         fileName: "App.js",
-                        lineNumber: 399,
+                        lineNumber: 397,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: props.resto.info?.cuisines.join(", ")
+                        children: resto.info?.cuisines.join(", ")
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 400,
+                        lineNumber: 398,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 397,
+                lineNumber: 395,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 389,
+        lineNumber: 387,
         columnNumber: 5
     }, undefined);
 };
@@ -3501,34 +3500,34 @@ const Body = ()=>{
                 resto: restaurantList[0]
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 408,
+                lineNumber: 406,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
                 resto: restaurantList[1]
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 409,
+                lineNumber: 407,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
                 resto: restaurantList[2]
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 410,
+                lineNumber: 408,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Card, {
                 resto: restaurantList[3]
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 411,
+                lineNumber: 409,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 407,
+        lineNumber: 405,
         columnNumber: 5
     }, undefined);
 };
@@ -3538,7 +3537,7 @@ const Footer = ()=>{
         children: "Footer"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 416,
+        lineNumber: 414,
         columnNumber: 10
     }, undefined);
 };
@@ -3548,17 +3547,17 @@ const AppLayot = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 422,
+                lineNumber: 420,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 423,
+                lineNumber: 421,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 424,
+                lineNumber: 422,
                 columnNumber: 7
             }, undefined)
         ]
@@ -3568,7 +3567,7 @@ _c6 = AppLayot;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayot, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 430,
+    lineNumber: 428,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5, _c6;
