@@ -18,7 +18,13 @@ body {
 }
 
 .logo {
+  cursor: pointer;
   width: 120px;
+  transition: all .2s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .nav-items > ul {
@@ -28,6 +34,10 @@ body {
   font-weight: bold;
   list-style-type: none;
   display: flex;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
 }
 
 .card {

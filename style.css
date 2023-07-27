@@ -20,6 +20,11 @@ body {
 
 .logo{
   width: 120px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.logo:hover{
+ transform: scale(1.1);
 }
 
 .nav-items > ul{
@@ -31,6 +36,9 @@ body {
   font-weight: bold;
 }
 
+.nav-items > ul>li{
+  cursor: pointer;
+}
 .card{
   width: 325px;
   transition: all 0.2s;

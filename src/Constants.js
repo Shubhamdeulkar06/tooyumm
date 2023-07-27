@@ -1,41 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Logo = () => {
-  return (
-    <a href="/">
-      <img
-        className="logo"
-        alt="logo"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eyW6P2H3qhGqnPcHFTDjbHckb4MOLBrRiw&usqp=CAU"
-      />
-    </a>
-  );
-};
-
-const Navbar = () => {
-  return (
-    <div className="nav-items">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
-      </ul>
-    </div>
-  );
-};
-
-const Header = () => {
-  return (
-    <header className="header">
-      <Logo />
-      <Navbar />
-    </header>
-  );
-};
-
-const restaurantList = [
+// restaurant list objects from swiggys api
+export const restaurantList = [
   {
     info: {
       id: "175143",
@@ -382,51 +346,6 @@ const restaurantList = [
     },
   },
 ];
-const Card = ({ name, cloudinaryImageId, avgRatingString, cuisines }) => {
-  // const { name, cloudinaryImageId, avgRatingString, cuisines } = resto.info;
-  return (
-    <div className="card">
-      <img
-        src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-        alt="image"
-      />
-      <div className="card-Content">
-        <h2>{name}</h2>
-        <h3>&#9733; {avgRatingString} </h3>
-        <h4>{cuisines.join(", ")}</h4>
-      </div>
-    </div>
-  );
-};
-const Body = () => {
-  return (
-    <div className="card-container">
-      {restaurantList.map((restaurant) => {
-        return <Card {...restaurant.info} key={restaurant.info.id} />;
-      })}
-    </div>
-  );
-};
-const Footer = () => {
-  return (
-    <footer>
-      <h4>&copy; Made with love by shubham</h4>
-    </footer>
-  );
-};
 
-const AppLayot = () => {
-  return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
-  );
-};
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayot />);
+export const IMG_CDN_URL =
+  "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
