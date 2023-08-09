@@ -72,3 +72,8 @@ body {
 footer > h4{
   text-align: center;
 }
+
+.search-container{
+  display: flex;
+  justify-content: center;
+}
