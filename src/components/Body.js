@@ -16,8 +16,6 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    //Api call here
-
     getRestaurants();
   }, []);
 
@@ -26,8 +24,6 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=15.4909301&lng=73.8278496&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    console.log(json);
-    //optional chaining
     setAllRestaurants(
       json.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -36,8 +32,6 @@ const Body = () => {
     );
   }
 
-  console.log("render");
-  console.log(filteredRestaurants);
   if (!allRestaurants) return null;
 
   return allRestaurants.length === 0 ? (

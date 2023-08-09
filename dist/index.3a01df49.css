@@ -79,4 +79,29 @@ footer > h4 {
   display: flex;
 }
 
+.shimmer-card {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 325px;
+  transition: all .2s;
+  box-shadow: 0 6px 15px 4px #0000001a;
+}
+
+.shimmer-img {
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  width: 100%;
+  height: 250px;
+}
+
+.shimmer-card-Content > h2, .shimmer-card-Content > h3, .shimmer-card-Content > h4 {
+  color: #d3d3d3;
+  background-color: #d3d3d3;
+  margin: 2px;
+}
+
+.shimmer-card-Content {
+  padding: 10px;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */
