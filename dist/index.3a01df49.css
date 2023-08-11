@@ -104,4 +104,10 @@ footer > h4 {
   padding: 10px;
 }
 
+.menu {
+  gap: 100px;
+  padding: 30px;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */
