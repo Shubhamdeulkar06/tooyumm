@@ -34407,6 +34407,6 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../Constants":"cGB5A","./Shimmer":"g6ZGj"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire0043")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../Constants":"cGB5A","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequire0043")
 
 //# sourceMappingURL=index.7271efb6.js.map
